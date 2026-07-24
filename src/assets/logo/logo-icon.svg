@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" fill="none" role="img" aria-label="Prime Style Constructions icon">
+  <title>Prime Style Constructions</title>
+  <!-- Icon mark -->
+  <rect width="48" height="48" rx="10" fill="#0B5ED7"/>
+  <path d="M12 36V20L24 12L36 20V36H28V26H20V36H12Z" fill="#FFFFFF"/>
+  <rect x="20" y="28" width="8" height="8" rx="1.5" fill="#D6E8FF"/>
+  <!-- Wordmark (High-contrast for dark themes) -->
+  <text x="60" y="22" font-family="system-ui, sans-serif" font-size="14" font-weight="800" fill="#FFFFFF" letter-spacing="-0.02em">PRIME STYLE</text>
+  <text x="60" y="38" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#60A5FA" letter-spacing="0.14em">CONSTRUCTIONS</text>
+</svg>

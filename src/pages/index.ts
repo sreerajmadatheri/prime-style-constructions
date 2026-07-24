@@ -1,0 +1,6 @@
+export * from './home'
+export * from './about'
+export * from './services'
+export * from './projects'
+export * from './contact'
+export * from './not-found'
