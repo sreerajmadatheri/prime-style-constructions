@@ -12,7 +12,8 @@ export function HeroContent() {
       </div>
 
       {/* Heading */}
-      <h1 className="mb-8 text-[#b88282] text-5xl font-black leading-[1.05] md:text-6xl lg:text-7xl">
+      {/*<h1 className="mb-8 text-[#b88282] text-5xl font-black leading-[1.05] md:text-6xl lg:text-7xl">*/}
+      <h1 className="mb-8 text-5xl font-black leading-[1.05] text-white md:text-6xl lg:text-7xl">
         {SITE.tagline}
       </h1>
 
@@ -22,7 +23,9 @@ export function HeroContent() {
       </p>
 
       {/* Buttons */}
-      <HeroActions />
+      <div className="mt-12">
+        <HeroActions />
+      </div>
     </div>
   )
 }

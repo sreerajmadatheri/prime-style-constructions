@@ -24,7 +24,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <Section className="bg-slate-50 py-24">
+    <Section spacing="none"  className="bg-slate-50 py-10">
       <Container>
         <SectionTitle
           overline="TESTIMONIALS"

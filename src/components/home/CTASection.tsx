@@ -3,7 +3,10 @@ import { Container, PrimaryButton, Section } from '@/components/ui'
 
 export default function CTASection() {
   return (
-    <Section className="relative overflow-hidden bg-primary py-24">
+    <Section
+      spacing="none"
+      className="relative overflow-hidden bg-primary py-10"
+    >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,.15),transparent_40%)]" />
 
       <Container>

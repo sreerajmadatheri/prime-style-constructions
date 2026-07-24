@@ -1,62 +1,95 @@
-import { ClipboardCheck, DraftingCompass, Hammer, House } from 'lucide-react'
+import {
+  ClipboardCheck,
+  DraftingCompass,
+  Hammer,
+  ShieldCheck,
+  House,
+} from 'lucide-react'
 
 import { Container, Section, SectionTitle } from '@/components/ui'
 
 const steps = [
   {
-    icon: ClipboardCheck,
+    number: '01',
     title: 'Consultation',
-    description: 'Understanding your requirements, budget and vision.',
+    description:
+      'We understand your vision, requirements, budget and expectations before starting your project.',
+    icon: ClipboardCheck,
   },
   {
-    icon: DraftingCompass,
+    number: '02',
     title: 'Planning & Design',
-    description: 'Preparing architectural plans and construction schedules.',
+    description:
+      'Our architects and engineers prepare detailed designs, plans and execution schedules.',
+    icon: DraftingCompass,
   },
   {
-    icon: Hammer,
+    number: '03',
     title: 'Construction',
     description:
-      'Executing the project with quality materials and expert engineers.',
+      'Experienced professionals execute every stage using premium materials and strict quality standards.',
+    icon: Hammer,
   },
   {
-    icon: House,
+    number: '04',
+    title: 'Quality Inspection',
+    description:
+      'Every project undergoes multiple quality checks before the final handover.',
+    icon: ShieldCheck,
+  },
+  {
+    number: '05',
     title: 'Project Handover',
     description:
-      'Delivering your dream home on time with complete satisfaction.',
+      'We deliver your dream project on time, ensuring complete customer satisfaction.',
+    icon: House,
   },
 ]
 
 export default function ConstructionProcess() {
   return (
-    <Section className="bg-white py-24">
+    <Section
+      spacing="none"
+      className="bg-gradient-to-b from-slate-50 to-white py-10"
+    >
       <Container>
         <SectionTitle
           overline="OUR PROCESS"
-          title="How We Build Your Dream"
-          description="A simple, transparent and proven construction process."
+          title="From Vision to Reality"
+          description="A transparent, structured and proven construction process that ensures quality, efficiency and complete peace of mind."
           align="center"
         />
 
-        <div className="mt-20 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-          {steps.map(({ icon: Icon, title, description }, index) => (
-            <div
-              key={title}
-              className="relative rounded-3xl border border-slate-200 p-8 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
-            >
-              <div className="absolute -top-5 left-1/2 flex h-10 w-10 -translate-x-1/2 items-center justify-center rounded-full bg-primary text-lg font-bold text-white">
-                {index + 1}
+        <div className="relative mt-20">
+          {/* Desktop Timeline */}
+          <div className="absolute left-0 right-0 top-14 hidden h-1 bg-slate-200 lg:block">
+            <div className="h-full w-full bg-gradient-to-r from-primary via-primary to-primary/40" />
+          </div>
+
+          <div className="grid gap-8 lg:grid-cols-5">
+            {steps.map(({ number, title, description, icon: Icon }) => (
+              <div key={title} className="group relative text-center">
+                {/* Timeline Circle */}
+                <div className="relative z-10 mx-auto flex h-28 w-28 items-center justify-center rounded-full border-8 border-white bg-primary shadow-xl transition-all duration-500 group-hover:scale-110">
+                  <Icon className="h-10 w-10 text-white" />
+                </div>
+
+                {/* Step Number */}
+                <div className="mt-6 text-sm font-bold tracking-[0.3em] text-primary">
+                  STEP {number}
+                </div>
+
+                {/* Card */}
+                <div className="mt-5 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition-all duration-500 group-hover:-translate-y-3 group-hover:shadow-2xl">
+                  <h3 className="mb-4 text-2xl font-bold text-slate-900">
+                    {title}
+                  </h3>
+
+                  <p className="leading-8 text-slate-600">{description}</p>
+                </div>
               </div>
-
-              <div className="mx-auto mt-6 flex h-20 w-20 items-center justify-center rounded-full bg-primary/10">
-                <Icon className="h-10 w-10 text-primary" />
-              </div>
-
-              <h3 className="mt-6 text-xl font-bold">{title}</h3>
-
-              <p className="mt-4 leading-7 text-text-muted">{description}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </Container>
     </Section>

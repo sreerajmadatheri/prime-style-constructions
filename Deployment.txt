@@ -1,0 +1,25 @@
+GIT bash# 
+
+1. Navigate into your local project directory folder
+cd /c/Projects/VentaAILabs/PrimeStyleConstructions
+
+git add .
+git commit -m "Add basename to createBrowserRouter"
+git push origin main
+
+npm run deploy
+
+FORCING
+
+Force a Completely Fresh Local CompilationWe will cleanly wipe out the local dist folder on your machine and force Vite to re-bundle your files from scratch. Run these commands inside Git 
+
+Bash:bash# 
+1. Clear out your old build directory completely to destroy stale cache keys
+rm -rf dist
+
+# 2. Run a fresh production compile
+npm run build
+
+Step 2: Push the Refreshed Bundle to your Mapped DomainNow, execute the deployment tool to overwrite the live gh-pages branch on GitHub with your clean files:bash
+npx gh-pages -d dist
+

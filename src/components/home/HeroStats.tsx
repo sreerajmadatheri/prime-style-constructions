@@ -11,7 +11,7 @@ export function HeroStats() {
       {stats.map((item) => (
         <div
           key={item.label}
-          className="rounded-3xl border border-white/20 bg-white/10 p-8 backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/40 hover:bg-white/15 hover:shadow-2xl"
+          className="rounded-3xl border border-white/20 bg-white/10 p-8 backdrop-blur-2xl transition-all duration-300 hover:-translate-y-2 hover:border-blue-300/40 hover:bg-white/15 hover:shadow-2xl"
         >
           <div className="text-5xl font-extrabold text-white">{item.value}</div>
 

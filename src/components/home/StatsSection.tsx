@@ -9,7 +9,7 @@ const stats = [
 
 export default function StatsSection() {
   return (
-    <Section className="bg-primary py-24 text-white">
+    <Section spacing="none"  className="bg-primary py-10 text-white">
       <div className="grid gap-10 text-center md:grid-cols-2 lg:grid-cols-4">
         {stats.map((item) => (
           <div key={item.label}>

@@ -3,7 +3,7 @@ import { HeroStats } from './HeroStats'
 
 export default function Hero() {
   return (
-    <section className="relative flex min-h-[calc(100vh-130px)] items-center overflow-hidden pt-[130px]">
+    <section className="relative flex min-h-screen items-center overflow-hidden pt-[130px] pb-20">
       {/* Animated Background */}
       <div
         className="animate-hero absolute inset-0 bg-cover bg-center"
@@ -25,7 +25,7 @@ export default function Hero() {
       <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-blue-500/20 blur-[140px]" />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-16 lg:px-8">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 pt-0 lg:px-8">
         <div className="grid items-center gap-20 lg:grid-cols-[1.3fr_0.9fr]">
           <HeroContent />
           <HeroStats />
