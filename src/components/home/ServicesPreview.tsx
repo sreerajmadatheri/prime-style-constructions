@@ -7,7 +7,7 @@ import {
   KeyRound,
   Paintbrush,
 } from 'lucide-react'
-import { PrimaryButton, Section, SectionTitle } from '@/components/ui'
+import { Section, SectionTitle } from '@/components/ui'
 
 const services = [
   {
@@ -107,7 +107,7 @@ export default function ServicesPreview() {
       </div>
 
       {/* Bottom CTA */}
-      <div className="mt-24 rounded-[32px] bg-primary px-10 py-16 text-center text-white shadow-2xl">
+      {/*<div className="mt-24 rounded-[32px] bg-primary px-10 py-16 text-center text-white shadow-2xl">
         <p className="text-sm font-semibold uppercase tracking-[0.35em] text-blue-200">
           LET'S BUILD TOGETHER
         </p>
@@ -124,7 +124,7 @@ export default function ServicesPreview() {
         <div className="mt-10">
           <PrimaryButton size="lg">Request Free Consultation</PrimaryButton>
         </div>
-      </div>
+      </div>*/}
     </Section>
   )
 }

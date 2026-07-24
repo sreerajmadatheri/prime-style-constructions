@@ -34,7 +34,7 @@ export default function FeaturedProjects() {
   return (
     <Section
       spacing="none"
-      className="bg-gradient-to-b from-white to-slate-50 py-10"
+      className="bg-linear-to-b from-blue-100 via-slate-100 to-slate-200 py-16"
     >
       <Container>
         <SectionTitle
